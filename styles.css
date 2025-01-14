@@ -1,0 +1,46 @@
+body {
+    background-color: #fcdae3;
+    font-family: 'Playwrite AU SA', Arial, sans-serif;
+    margin: 5px;
+    padding: 5px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center; 
+}
+
+header img {
+    max-width: 100px; 
+}
+
+main {
+    flex: 1;
+    text-align: center; 
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    
+}
+
+.styled-link {
+    background-color: rgb(231, 185, 217); 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+}
+
+.styled-link:hover {
+    background-color: rgb(235, 156, 211); 
+}
