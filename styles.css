@@ -6,6 +6,11 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    transition: opacity 0.5s ease-in-out; /* Adiciona transição de opacidade */
+}
+
+body.fade-out {
+    opacity: 0; /* Define opacidade para 0 quando a classe fade-out é adicionada */
 }
 
 header {
@@ -30,7 +35,40 @@ footer {
     bottom: 0;
     width: 100%;
     font-family: Arial, sans-serif;
-    
+    left: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .styled-link {
+    margin-top: 10px; /* Adiciona espaçamento acima dos links */
+    display: inline-block; /* Garante que o margin-top funcione */
+}
+
+/* Estilos para o overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fcdae3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.overlay img {
+    max-width: 200px;
+}
+
+.overlay.show {
+    opacity: 1;
 }
 
 .styled-link {
