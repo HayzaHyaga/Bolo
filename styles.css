@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    transition: opacity 0.5s ease-in-out; /* Adiciona transição de opacidade */
+    transition: opacity 1.5s ease-in-out; /* Aumenta o tempo da transição */
 }
 
 body.fade-out {
@@ -58,8 +58,8 @@ footer .styled-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out; /* Aumenta o tempo da transição */
     z-index: 1000;
 }
 
@@ -67,8 +67,8 @@ footer .styled-link {
     max-width: 200px;
 }
 
-.overlay.show {
-    opacity: 1;
+.overlay.hide {
+    opacity: 0;
 }
 
 .styled-link {
